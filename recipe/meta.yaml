@@ -1,5 +1,5 @@
 {% set name = "overturemaps" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/overturemaps-{{ version }}.tar.gz
-  sha256: 0df991cf15efa9f9b1ffd9df92d10d06af04d934fa699af05e45e2b8a0f6e3a6
+  sha256: beac618c6f2d6955b060da30173f76655f5f269d38566fc19be1fe9d328c32fc
 
 build:
   entry_points:
