@@ -1,5 +1,5 @@
 {% set name = "overturemaps" %}
-{% set version = "0.14.0" %}
+{% set version = "0.15.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/overturemaps-{{ version }}.tar.gz
-  sha256: 52d612e4570d053f48222c9b2945cafa3c069d743ea11fc7408de7b5f57c3588
+  sha256: 5f30fe1bc111e806e6249a57e6fab6df92b80c087f879396587b6e9b9b15f4c6
 
 build:
   entry_points:
     - overturemaps = overturemaps.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
