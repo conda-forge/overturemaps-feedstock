@@ -1,5 +1,5 @@
 {% set name = "overturemaps" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/overturemaps-{{ version }}.tar.gz
-  sha256: cbdd71f92e9828195dcbb3962170894391ee4772ab15175f0647cc9a469e5f2f
+  sha256: aef735329a827511ae3164b90920debfd485832557f15733a295d4fe5580cb18
 
 build:
   entry_points:
@@ -25,6 +25,7 @@ requirements:
     - python >={{ python_min }},<4.0.0
     - click >=8.3.0
     - numpy >=1.26.4
+    - orjson
     - pyarrow >=15.0.2
     - shapely >=2.1.0
 
