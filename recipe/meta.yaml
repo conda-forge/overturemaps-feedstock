@@ -25,6 +25,7 @@ requirements:
     - python >={{ python_min }},<4.0.0
     - click >=8.3.0
     - numpy >=1.26.4
+    - orjson
     - pyarrow >=15.0.2
     - shapely >=2.1.0
 
