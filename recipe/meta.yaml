@@ -28,6 +28,9 @@ requirements:
     - orjson
     - pyarrow >=15.0.2
     - shapely >=2.1.0
+    - colorama
+    - pyfiglet
+    - tqdm
 
 test:
   imports:
